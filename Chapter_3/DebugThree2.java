@@ -12,22 +12,23 @@ System.out.print("Enter a second integer >> ");
 b = input.nextInt();
 System.out.print("Enter a third integer >> ");
 c = input.nextInt();
-add(a, b);
-add(b, c);
-add(a, c);
-subtract(a, b);
-subtract(b, c);
-subtract(a, c);
+add(a, b, c);
+add(b, c, a);
+add(a, c, b);
+subtract(a, b, c);
+subtract(b, c, a);
+subtract(a, c, b);
 }
-public static void add(int a, int b)
+public static void add(int a, int b, int c)
 {
-System.out.println("The sum of " + a +
-" and " + b + " is " + (a + b));
+System.out.println("The sum of " + a + ", " + b +
+" and " + c + " is " + (a + b +c ));
 
 }
-public static void subtract(int a, int b)
+public static void subtract(int a, int b, int c)
 {
 System.out.println("The difference between " +
-a + " and " + b + " is " + (a - b));
+a + ", " + b +  " and " + c + " is " + (a - b - c));
 }
 }
+
