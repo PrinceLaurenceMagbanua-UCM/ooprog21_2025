@@ -7,7 +7,7 @@ public class BankBalance{
         int user_choice;
         final double int_rate = 0.03;
         int year = 0;
-        double bal;
+        double Bal;
 
         System.out.print("Enter initial bank balance: ");
         Bal = scannewr.nextInt();
